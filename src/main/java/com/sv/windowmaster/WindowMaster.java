@@ -34,11 +34,11 @@ public class WindowMaster {
         
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         
-        System.out.printf("The cost of %.1fsf of window will be: %10s%n", 
+        System.out.printf("The cost of %5.1fsf of window will be: %10s%n", 
                 area, currency.format(totalWindowCost));
-        System.out.printf("The cost of %.1flf of trim will be: %12s%n", 
+        System.out.printf("The cost of %5.1flf of trim will be: %12s%n", 
                 perimiter, currency.format(totalTrimCost));
-        System.out.printf("Your total will be: %28s%n", 
+        System.out.printf("Your total will be: %29s%n", 
                 currency.format(totalTrimCost + totalWindowCost));
     }
     
